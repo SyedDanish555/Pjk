@@ -1,0 +1,43 @@
+#include <stdio.h>
+
+// Function to convert case using XOR
+
+char convertCase(char c) {
+
+if (c >= 'A' && c <= 'Z') {
+
+// Convert uppercase to lowercase
+
+return c ^ 0x20;
+
+} else if (c >= 'a' && c <= 'z') {
+
+// Convert lowercase to uppercase
+
+return c ^ 0x20;
+
+} 
+
+// Return unchanged for non
+
+return c; 
+
+} 
+
+int main() {
+
+char input[] = "Hello, World!"; // Your input string
+
+int len = sizeof(input) 
+
+for (int i = 0; i < len; ++i) {
+
+input[i] = convertCase(input[i]);
+
+} 
+
+printf("Converted string: %s
+
+return 0; 
+
+}
