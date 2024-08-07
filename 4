@@ -1,0 +1,17 @@
+AREA SUM,CODE,READONLY 
+
+ENTRY
+
+MOV r0,#10
+
+MOV r1,#0
+
+ LOOP ADD r1,r1,r0
+
+ SUBS r0,r0,#1
+
+ BNE LOOP
+
+ STOP B STOP 
+
+ END
